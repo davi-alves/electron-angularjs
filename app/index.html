@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electron + AngularJs</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <script> document.write(process.versions['electron']) </script> on
+    <script> document.write(process.platform) </script>
+    <script type="text/javascript">
+        var fs = require('fs');
+        var file = fs.readFileSync('app/package.json');
+        document.write(file);
+    </script>
+</body>
+</html>
